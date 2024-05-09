@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    background: none;
+    width: 100%;
+    height: 70px;
+    transition: ease 0.5s;
+    z-index: 999;
+}
+.scroll{
+    position: fixed;
+    background: #FFDD70;
+    width: 100%;
+    height: 70px;
+    transition: ease 0.5s;
+    z-index: 999;
+}
+.scroll .logo{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin: 0 10px;
+    padding: 0 20px;
+    display: inline-block;
+    color: black;
+}
+.scroll .logo span{
+    color: white;
+}
+.navbar .logo{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin: 0 10px;
+    padding: 0 20px;
+    display: inline-block;
+    color: #FFDD70;
+}
+.navbar .logo span {
+    color: white;
+}
+.scroll .menu ul{
+    position: relative;
+    top: -50px;
+    float: right;
+    margin: 10px;
+}
+.navbar .menu ul{
+    position: relative;
+    top: -50px;
+    float: right;
+    margin: 10px;
+}
+.scroll .menu li {
+    display: inline-block;
+    list-style: none;
+    
+}
+.navbar .menu li {
+    display: inline-block;
+    list-style: none;
+    
+}
+.scroll .menu ul li a{
+    padding: 5px;
+    margin: 0px;
+    font-size: 18px;
+    transition: 0.5s;
+    color: black;
+}
+.navbar .menu ul li a{
+    padding: 5px;
+    margin: 0px;
+    font-size: 18px;
+    transition: 0.5s;
+    color: #FFDD70;
+}
+.scroll .menu ul li a:hover{
+    color:white;
+}
+.navbar .menu ul li a:hover{
+    color: white;
+}
+.home {
+    background: url(images/5798105.jpg)  center no-repeat;
+    height: 100vh;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    min-height: 500px;
+}
+.navbar .menubtn{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    color: white;
+}
+
+#avaturn-sdk-container{
+    height: 100vh;
+    right: 100px;
+}
+
+model-viewer{
+    right: 200px;
+    height: 500px;
+    width: 500px;
+    padding: 0;
+    margin-top: 20px;
+}
+.home .middletext {
+    text-align: center;
+    font-size: 25px;
+    font-family:  'Playfair Display', serif ;
+    color: white;
+    position: relative;
+    bottom:-200px;
+    z-index: 900;
+    padding: 5px;
+    text-transform: uppercase;
+    
+    
+} 
+ .home .middletext span{
+    color: #FFDD70;
+    font-size: 45px;
+    text-align: center;
+     animation: example 1000ms ease-in-out forwards infinite; 
+} 
+.home .middletext button{
+    font-family: 'Playfair Display', serif ;
+    background: none;
+    font-size: 25px;
+    padding: 5px 30px;
+    margin: 25px;
+    border: solid #FFDD70 3px;
+    border-radius: 30px;
+    color: #FFDD70;
+    transition: 1s ease ;
+}
+.home .middletext button:hover{
+    background: #FFDD70;
+    font-size: 27px;
+    color: black;
+    border: solid white 3px;
+
+}
+section{
+    padding: 70px;
+}
+.About, .skills {
+    font-family: 'Playfair Display', serif ;
+  ;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 750;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    font-family: 'Playfair Display', serif ;
+
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 150px;
+    height: 3px;
+    background: #FFDD70;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 15px;
+    color: #FFDD70;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+}
+.skills .title::after{
+    background: rgb(22, 15, 15);
+    font-size: 17px;
+    color: white;
+}
+.About .title::after{
+    content: "Who i am";
+}
+.skills .title::after{
+    content: "What i know";
+}
+.About .Aboutcontent ,.skills .skillcontent{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.About .Aboutcontent .columnright{
+    position: relative;
+    top: 30px;
+    width: 55%; 
+}
+.skills .skillcontent .columnright{
+    position: relative;
+    top: 30px;
+    width: 55%; 
+}
+.About .Aboutcontent .columnright .text{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.About .Aboutcontent .columnright .text span{
+    color: #FFDD70;
+}
+.About .Aboutcontent .columnright p{
+    text-align: justify;
+}
+.About .Aboutcontent .columnright a{
+    display: inline-block;
+    background: none;
+    color: #FFDD70;
+    font-size: 17px;
+    padding: 10px 30px;
+    font-weight: 300;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid #FFDD70;
+    transition: all 0.4s ease;
+}
+.About .Aboutcontent .columnright a:hover{
+    background: #FFDD70;
+    color: black;
+}
+.About .Aboutcontent .columnleft img{
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    align-items: right;
+    margin: 0 50px;
+}
+.skills .skillcontent .columnleft img{
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    align-items: right;
+    margin: 0 50px;
+}
+.skills{
+    background: url("images/5798105.jpg");
+}
+.skills h2{
+    color: #FFDD70;
+}
+.skills .skillcontent .text{
+    color: white;
+}
+.skills .skillcontent p{
+    color: grey;
+}
+.works{
+    margin-bottom: 170px;
+}
+.works .workcontent .card{
+    width: Calc(33% - 20px);
+    font-family: 'Playfair Display', serif  ;
+    background: #222;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px 35px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: inline-block;
+}
+.works .workcontent .card:hover{
+    background: #FFDD70;
+    color: black;
+}
+.works .workcontent .card i{
+    font: 60px;
+    color: #FFDD70;
+    transition: all 0.4s ease;
+}
+.works .workcontent .card:hover i{
+     color: black;
+}
+.works .workcontent .card .text{
+    font-size: 21px;
+    font-weight: 500;
+    margin: 7px 0 5px 0;
+    color:rgb(255, 255, 255);
+    font-family: 'Playfair Display', serif ;
+    text-transform: uppercase;
+}
+.works .workcontent .card .box{
+    transition: all 0.4s ease;
+}
+.works .workcontent .card:hover .box{
+    transform: scale(1.5);
+}
+.works .workcontent .card:hover .text{
+    color: black;
+}
+.works .workcontent .card .box button{
+    /* font-family: 'Playfair Display', serif ;
+    font-size: 30px;
+    margin: 30px 80px 0;
+    border: solid 5px #FFDD70;
+    border-radius: 10px; */
+    font-family: 'Playfair Display', serif ;
+    background: none;
+    font-size: 25px;
+    padding: 5px 30px;
+    margin: 25px;
+    border: solid #FFDD70 3px;
+    border-radius: 30px;
+    color: #FFDD70;
+    transition: 1s ease ;
+
+}
+.links {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    font-family: 'Playfair Display', serif;
+
+}
+.links .title{
+    display: inline-block;
+}
+.links .reallinks a{
+    color: #FFDD70;
+}
+.links .reallinks a:hover{
+    color: black;
+}
+.contact{
+    background: black;
+}
+.contact .title{
+    color: #FFDD70;
+    font-weight: 100;
+}
+.contact .title::after{
+    content: "My Contact";
+    background: black;
+    color: white;
+}
+.contact .text {
+    font-family: 'Playfair Display', serif;
+    justify-content: space-around;
+    color: white;
+    font-size: 30px;
+    
+    padding: 10px;
+    
+}
+.contact a{
+    color: #FFDD70;
+}
+.contact a:hover{
+    color: white;
+}
+/* .geeks {
+    width: 400px;
+    height: 2px;
+    background: #FFDD70;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.geeks::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    animation: animate 5s linear infinite;
+} */
+
+.geeks {
+    width: 400px;
+    height: 2px;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.geeks::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFDD70;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    0% {
+        left: 0;
+    }
+}
+ @keyframes example {
+    0%   {
+        filter: brightness(2);
+        filter: contrast(2);
+        -webkit-filter: brightness(1);
+        -webkit-filter: contrast(1);
+        text-shadow: 0 0 8px #FFDD70;
+    }
+    50%  {
+        filter: brightness(0.4);
+        filter: contrast(0.4);
+        -webkit-filter: brightness(0.4);
+        -webkit-filter: contrast(0.4);
+    }
+    100% {
+        filter: brightness(2);
+        filter: contrast(2);
+        -webkit-filter: brightness(1);
+        -webkit-filter: contrast(1);
+    }
+} 
+
+
+@media (max-width: 1000px){
+    .navbar .logo{
+        text-align: center;
+        padding: 0 20px;
+        margin: auto;
+        align-items: center;
+    }
+    .scroll .logo{
+        text-align: center;
+        padding: 0 20px;
+        margin: auto;
+        align-items: center;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 0.4s ease;
+        color: white;
+    }
+    .scroll{
+        position: sticky;
+    }
+    .scroll .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 0.4s ease;
+        color: white;
+    }
+    .scroll .menu.active{
+        left: 0;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        
+        top: 0px;
+        background:url(images/5798105.jpg);
+        text-align: center;
+        padding-top: 20px;
+       
+        color: white;
+        text-align: center;
+    }
+
+    .scroll .menu.active{
+        left: 0;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        
+        top: 0px;
+        background:url(images/5798105.jpg);
+        text-align: center;
+        padding-top: 20px;
+       
+        color: white;
+        text-align: center;
+    }
+    .navbar .menu.active{
+        left: 0;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        top: 0px;
+        background:url(images/5798105.jpg);
+        text-align: center;
+        padding-top: 20px;
+        z-index: 999;
+        color: white;
+        text-align: center;
+    }
+    .navbar .menu li {
+        display: block;
+        position: relative;
+        top: 100px;
+        float: center;
+        text-align: left;
+        font-size: 80px;
+        margin: auto -50%;
+      
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        color: white;
+       
+    }
+    .navbar .menubtn{
+        font-size: 50px;
+        float: right;
+        padding: 10px 20px;
+        font-weight: 900;
+        display: block;
+        z-index: 999;
+        position: relative;
+        left: 80%;
+        top: -65px;
+       
+    }
+    .home .middletext {
+        text-align: center;
+        font-size: 25px;
+        font-family:  'Playfair Display', serif ;
+        color: white;
+        position: relative;
+        bottom:-250px;
+        z-index: 900;
+        padding: 5px;
+        text-transform: uppercase;
+        padding: 20px;
+        
+    } 
+    .home .middletext span{
+        color: #FFDD70;
+        font-size: 35px;
+        text-align: center;
+         animation: example 1000ms ease-in-out forwards infinite; 
+    } 
+ 
+    .home .middletext button{
+        font-family: 'Playfair Display', serif ;
+        background: none;
+        font-size: 25px;
+        padding: 5px 30px;
+        margin: 25px;
+        border: solid #FFDD70 3px;
+        border-radius: 30px;
+        color: #FFDD70;
+        transition: 1s ease ;
+    }
+    .home .middletext button:hover{
+        background: #FFDD70;
+        font-size: 27px;
+        color: black;
+        border: solid white 3px;
+    
+    }
+    .geeks {
+        width: 200px;
+        height: 2px;
+        background: none;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .geeks::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #FFDD70;
+        animation: animate 5s linear infinite;
+    }
+    .About .Aboutcontent .column{
+        width: 50%;
+        position: relative;
+        left: 10%;
+    }
+    .skills .skillcontent .column{
+        width: 50%;
+    }
+    .About .Aboutcontent .columnleft img{
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        position: relative;
+        
+    }
+    .skills .skillcontent .columnleft img{
+        position: relative;
+        left: 10%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .maxwidth{
+        max-width: 700px;
+    }
+    .About .Aboutcontent .columnleft{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 50px;
+        
+    }
+    .skills .skillcontent{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 50px;
+    }
+    .About .Aboutcontent .columnright{
+        flex: 100%;
+    }
+    .skills .skillcontent .columnright{
+        flex: 100%;
+    }
+    .About .Aboutcontent .columnleft{
+        width: 100%;
+    }
+    .skills .skillcontent .columnleft{
+        width: 100%;
+    }
+    .About .Aboutcontent .columnright{
+        width: 100%;
+    }
+    .skills .skillcontent .columnright{
+        width: 100%;
+    }
+    #works{
+        background: black;
+        height: 240vh;
+    }
+    #works .workcontent .card .box img{
+        height: 100px;
+    }
+    .works .workcontent .card{
+        width: 100%;
+       
+     }
+     .works{
+         margin-bottom: 50px;
+     }
+     
+}
+
+/* Slideshow container */
+[data-component="slideshow"] .slide {
+    display: inline-block;
+    
+    align-items: center;
+    padding: 10px ;
+    transition: 0s ease;
+  }
+
+  [data-component="slideshow"] .slide.active {
+    display: block;
+
+  }
+ .works .title::after{
+     content: "My projects";
+     background: black;
+     font-size: 17px;
+     color: white;
+ }
+ .works h2{
+     color: #FFDD70;
+ }
+ .works{
+     background: black;
+     height: 100vh;
+
+    
+    
+ }
